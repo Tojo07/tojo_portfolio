@@ -11,20 +11,30 @@ function App() {
   }, []);
 
   return (
-    <section class='h-screen lg:h-screen lg:w-screen bg-[#bab6aa] lg:px-12 lg:py-4 font-main lg:flex lg:flex-col'>
-      <div class='h-[10%] w-full bg-[#5d5c5a] text-[#151724] font-normal lg:rounded-md lg:mb-4 flex justify-between lg:animate-show'>
-        <div class='h-full w-[20%] flex justify-start place-items-center pl-4 cursor-default'>
+    <section class='h-screen  lg:h-screen lg:w-screen bg-[#bab6aa] lg:px-12 lg:py-4 font-main  lg:flex lg:flex-col'>
+      <div class='h-[6%] lg:h-[10%] w-full bg-[#5d5c5a] text-[#151724] font-normal lg:rounded-md lg:mb-4 flex justify-between lg:animate-show'>
+        <div class='h-full w-[30%] flex justify-start place-items-center pl-4 cursor-default'>
           <h1 class={`transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
-            } ease-in-out font-normal text-lg`}>Tojo <span class='font-semibold'>Tsimalay</span></h1>
+            } ease-in-out font-normal lg:text-lg text-sm`}>Tojo <span class='font-semibold'>Tsimalay</span></h1>
         </div>
-        <div class={`h-full w-[20%] flex justify-between px-4 transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
-          } ease-in-out text-lg font-normal`}>
-          <button class='hover:text-[#2E3042] transition delay-200 ease-in-out'>About</button>
-          <button class='hover:text-[#2E3042] transition delay-200 ease-in-out'>Projects</button>
-          <button onClick={() => window.open('https://medium.com/@tsimalayheriniainatojo', '_blank')} class='hover:text-[#2E3042] transition delay-200 ease-in-out'>Blog</button>
-        </div>
+        {640 >= window.innerWidth ? (
+          <div class={`h-full w-[20%] flex justify-center place-items-center px-4 transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
+            } ease-in-out text-lg font-normal`}>
+            <button className="w-[50%] h-[50%]" onClick={() => { }}>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="2"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#151724" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </button>
+          </div>
+        )
+          :
+          <div class={`h-full w-[20%] flex justify-between px-4 transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
+            } ease-in-out text-lg font-normal`}>
+            <button class='hover:text-[#2E3042] transition delay-200 ease-in-out'>About</button>
+            <button class='hover:text-[#2E3042] transition delay-200 ease-in-out'>Projects</button>
+            <button onClick={() => window.open('https://medium.com/@tsimalayheriniainatojo', '_blank')} class='hover:text-[#2E3042] transition delay-200 ease-in-out'>Blog</button>
+          </div>
+        }
       </div>
-      <div class='h-[90%] min-h-[100vh] lg:h-[88%] w-full lg:flex sm:relativ overflow-scroll lg:overflow-hidden'>
+      <div class='h-[90%] min-h-[100vh] lg:min-h-[88%] lg:h-[88%] w-full lg:flex overflow-scroll lg:overflow-hidden'>
         <div class='h-[70%] w-full lg:h-full lg:w-[68%] lg:mr-4'>
           <div class='h-[60%] lg:h-[69%] w-full lg:flex lg:mb-4'>
             <div class='relative h-[45%] w-full lg:h-full lg:w-[64%] bg-[#5d5c5a] lg:rounded-md lg:mr-4 animate-show p-4 flex text-center lg:text-start justify-center place-items-center text-[#151724]'
@@ -35,7 +45,7 @@ function App() {
             <div class='relative h-[60%] w-full lg:h-full lg:w-[34%] top-1/2 left-1/2 lg:rounded-md bg-[url("../public/IMG_4259.JPG")] bg-cover bg-top bg-clip-border animate-slide z-50'>
             </div>
           </div>
-          <div class='h-[40%] w-full lg:h-[30%] lg:w-full lg:flex lg:pb-2'>
+          <div class='h-[40%] w-full lg:h-[29%] lg:w-full lg:flex lg:pb-2'>
             <div class='relative h-[50%] lg:h-full w-full bg-[#5d5c5a] lg:rounded-md animate-show lg:mr-4'
               style={{ '--start-top': '-200px', '--start-left': '500px' }}></div>
             <button onClick={() => { window.open(resume, '_blank') }} class='relative h-[50%] lg:h-full w-full bg-[#151724] lg:rounded-md animate-show transition duration-200 hover:bg-[#2E3042]'
@@ -52,15 +62,15 @@ function App() {
           </div>
         </div>
 
-        <div class='h-[80%] w-full lg:h-full lg:w-[32%]'>
-          <div class='relative h-[86%] w-full bg-[#5d5c5a] lg:rounded-md lg:mb-4 animate-show lg:px-4'
+        <div class='h-[70%] w-full lg:h-full lg:w-[32%]'>
+          <div class='relative h-[70%] lg:h-[79%] w-full bg-[#5d5c5a] lg:rounded-md lg:mb-4 animate-show lg:px-4'
             style={{ '--start-left': '-300px' }}>
             <div class={`h-[10%] w-full flex justify-between place-items-top pt-4 transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
               } ease-in-out`}>
               <h1 class='text-lg'>Photography</h1>
               <svg class='size-6' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 4C11.4477 4 11 3.55228 11 3C11 2.44772 11.4477 2 12 2L20 2C21.1046 2 22 2.89543 22 4V12C22 12.5523 21.5523 13 21 13C20.4477 13 20 12.5523 20 12V5.39343L3.72798 21.6655C3.33746 22.056 2.70429 22.056 2.31377 21.6655C1.92324 21.2749 1.92324 20.6418 2.31377 20.2512L18.565 4L12 4Z" fill="#151724"></path> </g></svg>
             </div>
-            <div class={`w-full h-[50%] bg-[url("../public/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.jpeg")] bg-cover bg-clip-border bg-center rounded-lg duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
+            <div class={`w-full h-[50%] bg-[url("../public/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.jpeg")] bg-cover bg-clip-border bg-center lg:rounded-lg duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
               } ease-in-out`}></div>
             <div class={`h-[40%] py-4 w-full flex flex-col justify-center places-content-center duration-1000 text-2xl delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
               } ease-in-out`}>
@@ -69,7 +79,7 @@ function App() {
               <div class='w-full h-[34%] border-t-2 border-[#151724] flex justify-start place-items-center'>Lifestyle</div>
             </div>
           </div>
-          <div class='relative h-[14%] w-full bg-[#5d5c5a] lg:rounded-md animate-show flex justify-center place-items-center px-4'
+          <div class='relative h-[8%] lg:h-[18%] w-full bg-[#5d5c5a] lg:rounded-md animate-show flex justify-center place-items-center px-4'
             style={{ '--start-top': '-200px', '--start-left': '-300px' }}>
             <div class={`h-full w-[60%] flex justify-between place-items-center transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
               } ease-in-out`}>
