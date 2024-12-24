@@ -4,6 +4,7 @@ import './App.css';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false)
   const text_display_delay = '2000ms';
 
   useEffect(() => {
@@ -18,11 +19,23 @@ function App() {
             } ease-in-out font-normal lg:text-lg text-sm`}>Tojo <span class='font-semibold'>Tsimalay</span></h1>
         </div>
         {640 >= window.innerWidth ? (
-          <div class={`h-full w-[20%] flex justify-center place-items-center px-4 transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
+          <div class={`h-full w-[20%] flex justify-center place-items-center transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
             } ease-in-out text-lg font-normal`}>
-            <button className="w-[50%] h-[50%]" onClick={() => { }}>
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="2"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#151724" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-            </button>
+            {isNavOpen ? (
+              <div className="w-full min-h-full bg-[#5d5c5a] flex flex-col gap-y-2 text-sm z-50 pt-16">
+                <button onClick={() => { setIsNavOpen(false) }} class='hover:text-[#2E3042] transition delay-200 ease-in-out'>About</button>
+                <button onClick={() => { setIsNavOpen(false) }} class='hover:text-[#2E3042] transition delay-200 ease-in-out'>Projects</button>
+                <button onClick={() => {
+                  setIsNavOpen(false);
+                  window.open('https://medium.com/@tsimalayheriniainatojo', '_blank')
+                }} class='hover:text-[#2E3042] transition delay-200 ease-in-out'>Blog</button>
+              </div>
+            ) :
+              <button className="w-[50%] h-[50%]" onClick={() => { setIsNavOpen(true) }}>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="2"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#151724" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              </button>
+            }
+
           </div>
         )
           :
@@ -42,7 +55,7 @@ function App() {
               <p class={`text-3xl lg:text-5xl font-black leading-tight transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
                 } ease-in-out`}>Student Software Engineer and <span class='font-light text-[#DAD3C8] bg-[#151724] p-1 text-2xl lg:text-4xl'>Photography</span> Enthousiast</p>
             </div>
-            <div class='relative h-[60%] w-full lg:h-full lg:w-[34%] top-1/2 left-1/2 lg:rounded-md bg-[url("../public/IMG_4259.JPG")] bg-cover bg-top bg-clip-border animate-slide z-50'>
+            <div class='relative h-[60%] w-full lg:h-full lg:w-[34%] top-1/2 left-1/2 lg:rounded-md bg-[url("../public/IMG_4259.JPG")] bg-cover bg-top bg-clip-border animate-slide'>
             </div>
           </div>
           <div class='h-[40%] w-full lg:h-[29%] lg:w-full lg:flex lg:pb-2'>
