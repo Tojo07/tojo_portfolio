@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.961c5faf.css",
-    "main.js": "/static/js/main.63061e4c.js",
+    "main.js": "/static/js/main.dc5e2cde.js",
     "static/js/453.5b35bac5.chunk.js": "/static/js/453.5b35bac5.chunk.js",
     "static/media/IMG_4259.JPG": "/static/media/IMG_4259.79f4dc72d71cbadad409.JPG",
     "static/media/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.jpeg": "/static/media/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.3c7a21b4e5affc1b5639.jpeg",
     "static/media/resume_fall_2024_tojo_tsimalay.pdf": "/static/media/resume_fall_2024_tojo_tsimalay.918b53428d64b2577b1f.pdf",
     "index.html": "/index.html",
     "main.961c5faf.css.map": "/static/css/main.961c5faf.css.map",
-    "main.63061e4c.js.map": "/static/js/main.63061e4c.js.map",
+    "main.dc5e2cde.js.map": "/static/js/main.dc5e2cde.js.map",
     "453.5b35bac5.chunk.js.map": "/static/js/453.5b35bac5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.961c5faf.css",
-    "static/js/main.63061e4c.js"
+    "static/js/main.dc5e2cde.js"
   ]
 }
