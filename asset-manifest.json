@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/tojo_portfolio/static/css/main.07443a35.css",
-    "main.js": "/tojo_portfolio/static/js/main.c5b0c976.js",
-    "static/js/453.5b35bac5.chunk.js": "/tojo_portfolio/static/js/453.5b35bac5.chunk.js",
-    "static/media/IMG_4259.JPG": "/tojo_portfolio/static/media/IMG_4259.f6fff5247fdb208e8957.JPG",
-    "static/media/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.jpeg": "/tojo_portfolio/static/media/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.3c7a21b4e5affc1b5639.jpeg",
-    "static/media/resume_fall_2024_tojo_tsimalay.pdf": "/tojo_portfolio/static/media/resume_fall_2024_tojo_tsimalay.918b53428d64b2577b1f.pdf",
-    "index.html": "/tojo_portfolio/index.html",
-    "main.07443a35.css.map": "/tojo_portfolio/static/css/main.07443a35.css.map",
-    "main.c5b0c976.js.map": "/tojo_portfolio/static/js/main.c5b0c976.js.map",
-    "453.5b35bac5.chunk.js.map": "/tojo_portfolio/static/js/453.5b35bac5.chunk.js.map"
+    "main.css": "/static/css/main.d63c9017.css",
+    "main.js": "/static/js/main.63061e4c.js",
+    "static/js/453.5b35bac5.chunk.js": "/static/js/453.5b35bac5.chunk.js",
+    "static/media/IMG_4259.JPG": "/static/media/IMG_4259.f6fff5247fdb208e8957.JPG",
+    "static/media/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.jpeg": "/static/media/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.3c7a21b4e5affc1b5639.jpeg",
+    "static/media/resume_fall_2024_tojo_tsimalay.pdf": "/static/media/resume_fall_2024_tojo_tsimalay.918b53428d64b2577b1f.pdf",
+    "index.html": "/index.html",
+    "main.d63c9017.css.map": "/static/css/main.d63c9017.css.map",
+    "main.63061e4c.js.map": "/static/js/main.63061e4c.js.map",
+    "453.5b35bac5.chunk.js.map": "/static/js/453.5b35bac5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07443a35.css",
-    "static/js/main.c5b0c976.js"
+    "static/css/main.d63c9017.css",
+    "static/js/main.63061e4c.js"
   ]
 }
