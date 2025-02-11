@@ -6,6 +6,8 @@ function App() {
   const [loaded, setLoaded] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [song, setSong] = useState(null);
+  const [loading, setLoading] = useState(null);
+  const [error, setError] = useState(null);
   const text_display_delay = '2000ms';
 
   useEffect(() => {
