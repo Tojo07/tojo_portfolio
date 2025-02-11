@@ -36,6 +36,13 @@ function App() {
     setLoaded(true);
   }, []);
 
+  const lineStyle = {
+    fill: "#151724",
+    stroke: "#000000",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+  };
+
   return (
     <section className='h-screen  lg:h-screen lg:w-screen bg-[#bab6aa] lg:px-12 lg:py-4 font-main  lg:flex lg:flex-col'>
       <div className='h-[6%] lg:h-[10%] w-full bg-[#5d5c5a] text-[#151724] font-normal lg:rounded-md lg:mb-4 flex justify-between lg:animate-show'>
@@ -92,8 +99,8 @@ function App() {
           <div className='h-[40%] w-full lg:h-[29%] lg:w-full lg:flex lg:pb-2'>
             <button onClick={() => window.open(song.external_url, "_blank")} className='relative h-[50%] lg:h-full w-full bg-[#1db954] hover:bg-[#4ac776] lg:rounded-md animate-show lg:mr-4 transition duration-200'
               style={{ '--start-top': '-200px', '--start-left': '500px' }}>
-              <div className="lg:p-4 p-2 text-[#151724]">
-                <div className="flex">
+              <div className="h-full w-full lg:px-4 px-2 text-[#151724]">
+                <div className="lg:w-full lg:h-[30%] flex border-b-2 justify-between border-[#151724] place-items-center">
                   <svg fill="#000000" className="lg:size-10 size-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 
                     <g id="SVGRepo_bgCarrier" stroke-width="0" />
@@ -108,12 +115,28 @@ function App() {
 
                   </svg>
                   <h1 className="w-full text-center lg:text-2xl text-xl font-extrabold font-main">
-                    Song of the day
+                    Song Of The Day
                   </h1>
                   <svg className='size-6' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 4C11.4477 4 11 3.55228 11 3C11 2.44772 11.4477 2 12 2L20 2C21.1046 2 22 2.89543 22 4V12C22 12.5523 21.5523 13 21 13C20.4477 13 20 12.5523 20 12V5.39343L3.72798 21.6655C3.33746 22.056 2.70429 22.056 2.31377 21.6655C1.92324 21.2749 1.92324 20.6418 2.31377 20.2512L18.565 4L12 4Z" fill="#151724"></path> </g></svg>
                 </div>
                 {song && (
-                  <div className="flex gap-4 justify-center pt-2 place-items-center">
+                  <div className="lg:h-[70%] lg:w-full flex gap-x-4 justify-center pt-2 place-items-center">
+                    <svg className="size-14" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                      <g>
+                        <line style={lineStyle} x1="13.1159" y1="11.7737" x2="13.1159" y2="36.2263" />
+                        <line style={lineStyle} x1="8.8039" y1="16.8329" x2="8.8039" y2="31.1671" />
+                        <line style={lineStyle} x1="4.5" y1="21.4705" x2="4.5" y2="26.5295" />
+                        <line style={lineStyle} x1="17.4569" y1="16.8329" x2="17.4569" y2="31.1671" />
+                        <line style={lineStyle} x1="21.9465" y1="21.4705" x2="21.9465" y2="26.5295" />
+                      </g>
+                      <g>
+                        <line style={lineStyle} x1="34.6693" y1="11.7737" x2="34.6693" y2="36.2263" />
+                        <line style={lineStyle} x1="30.3573" y1="16.8329" x2="30.3573" y2="31.1671" />
+                        <line style={lineStyle} x1="26.0535" y1="21.4705" x2="26.0535" y2="26.5295" />
+                        <line style={lineStyle} x1="39.0104" y1="16.8329" x2="39.0104" y2="31.1671" />
+                        <line style={lineStyle} x1="43.5" y1="21.4705" x2="43.5" y2="26.5295" />
+                      </g>
+                    </svg>
                     <img src={song.cover} alt="Album Cover" className="lg:w-24 lg:h-24 w-16 h-16" />
                     <div>
                       <h1 className="text-center font-extrabold lg:text-2xl text-xl">{song.artist}</h1>
