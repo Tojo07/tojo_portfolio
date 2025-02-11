@@ -6,8 +6,6 @@ function App() {
   const [loaded, setLoaded] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [song, setSong] = useState(null);
-  const [loading, setLoading] = useState(null);
-  const [error, setError] = useState(null);
   const text_display_delay = '2000ms';
 
   useEffect(() => {
@@ -92,9 +90,9 @@ function App() {
           <div className='h-[40%] w-full lg:h-[29%] lg:w-full lg:flex lg:pb-2'>
             <button onClick={() => window.open(song.external_url, "_blank")} className='relative h-[50%] lg:h-full w-full bg-[#1db954] hover:bg-[#4ac776] lg:rounded-md animate-show lg:mr-4 transition duration-200'
               style={{ '--start-top': '-200px', '--start-left': '500px' }}>
-              <div className="p-4 text-[#151724]">
+              <div className="lg:p-4 p-2 text-[#151724]">
                 <div className="flex">
-                  <svg fill="#000000" className="size-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg fill="#000000" className="lg:size-10 size-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 
                     <g id="SVGRepo_bgCarrier" stroke-width="0" />
 
@@ -107,17 +105,17 @@ function App() {
                     </g>
 
                   </svg>
-                  <h1 className="w-full text-center text-2xl font-extrabold font-main">
+                  <h1 className="w-full text-center lg:text-2xl text-xl font-extrabold font-main">
                     Song of the day
                   </h1>
                   <svg className='size-6' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 4C11.4477 4 11 3.55228 11 3C11 2.44772 11.4477 2 12 2L20 2C21.1046 2 22 2.89543 22 4V12C22 12.5523 21.5523 13 21 13C20.4477 13 20 12.5523 20 12V5.39343L3.72798 21.6655C3.33746 22.056 2.70429 22.056 2.31377 21.6655C1.92324 21.2749 1.92324 20.6418 2.31377 20.2512L18.565 4L12 4Z" fill="#151724"></path> </g></svg>
                 </div>
                 {song && (
                   <div className="flex gap-4 justify-center pt-2 place-items-center">
-                    <img src={song.cover} alt="Album Cover" className="w-24 h-24" />
+                    <img src={song.cover} alt="Album Cover" className="lg:w-24 lg:h-24 w-16 h-16" />
                     <div>
-                      <h1 className="text-center font-extrabold text-2xl">{song.artist}</h1>
-                      <h1 className="text-center font-semibold text-lg">{song.name}</h1>
+                      <h1 className="text-center font-extrabold lg:text-2xl text-xl">{song.artist}</h1>
+                      <h1 className="text-center font-semibold lg:text-lg text-md">{song.name}</h1>
                     </div>
                   </div>
                 )}
