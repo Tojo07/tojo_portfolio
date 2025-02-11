@@ -92,7 +92,7 @@ function App() {
             <div className='relative h-[45%] w-full lg:h-full lg:w-[64%] bg-[#5d5c5a] lg:rounded-md lg:mr-4 animate-show p-4 flex text-center lg:text-start justify-center place-items-center text-[#151724]'
               style={{ '--start-left': '500px' }}>
               <p className={`text-3xl lg:text-5xl font-black leading-tight transition-opacity duration-1000 delay-[${text_display_delay}] ${loaded ? "opacity-100" : "opacity-0"
-                } ease-in-out`}>Student Software Engineer and <span className='font-light text-[#DAD3C8] bg-[#151724] p-1 text-2xl lg:text-4xl'>Photography</span> Enthousiast</p>
+                } ease-in-out`}>Student Software Engineer and <span className='font-light text-[#DAD3C8] bg-[#151724] p-1 text-2xl lg:text-4xl'>Photography</span> Enthusiast</p>
             </div>
             <div className='relative h-[60%] w-full lg:h-full lg:w-[34%] top-1/2 left-1/2 lg:rounded-md bg-[url("../public/IMG_4259.JPG")] bg-cover bg-top bg-clip-border animate-slide'>
             </div>
