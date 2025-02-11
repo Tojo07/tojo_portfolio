@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/tojo_portfolio/static/css/main.8d2d0ef2.css",
-    "main.js": "/tojo_portfolio/static/js/main.ef82815e.js",
+    "main.css": "/tojo_portfolio/static/css/main.07443a35.css",
+    "main.js": "/tojo_portfolio/static/js/main.7c10c096.js",
     "static/js/453.5b35bac5.chunk.js": "/tojo_portfolio/static/js/453.5b35bac5.chunk.js",
     "static/media/IMG_4259.JPG": "/tojo_portfolio/static/media/IMG_4259.f6fff5247fdb208e8957.JPG",
     "static/media/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.jpeg": "/tojo_portfolio/static/media/2820EAC3-D075-4B7E-A8E1-7E88DC73B106_1_105_c.3c7a21b4e5affc1b5639.jpeg",
     "static/media/resume_fall_2024_tojo_tsimalay.pdf": "/tojo_portfolio/static/media/resume_fall_2024_tojo_tsimalay.918b53428d64b2577b1f.pdf",
     "index.html": "/tojo_portfolio/index.html",
-    "main.8d2d0ef2.css.map": "/tojo_portfolio/static/css/main.8d2d0ef2.css.map",
-    "main.ef82815e.js.map": "/tojo_portfolio/static/js/main.ef82815e.js.map",
+    "main.07443a35.css.map": "/tojo_portfolio/static/css/main.07443a35.css.map",
+    "main.7c10c096.js.map": "/tojo_portfolio/static/js/main.7c10c096.js.map",
     "453.5b35bac5.chunk.js.map": "/tojo_portfolio/static/js/453.5b35bac5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d2d0ef2.css",
-    "static/js/main.ef82815e.js"
+    "static/css/main.07443a35.css",
+    "static/js/main.7c10c096.js"
   ]
 }
