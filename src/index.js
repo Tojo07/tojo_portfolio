@@ -4,17 +4,17 @@ import './index.css';
 import About from './About';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
-import { Route, Routes, HashRouter } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path="about" element={<About />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
