@@ -44,7 +44,7 @@ function Home() {
 
     return (
         <section className='h-screen  lg:h-screen lg:w-screen bg-[#bab6aa] lg:px-12 lg:py-4 font-main  lg:flex lg:flex-col'>
-            <Nav text_display_delay={text_display_delay} h="6%" lg_h="10%" loaded={loaded} animate="lg:animate-show" />
+            <Nav text_display_delay={text_display_delay} h="6%" lg_h="10%" loaded={loaded} animate="lg:animate-show" button_one='About Me' href_one='about' button_two='Projects' href_two='https://github.com/Tojo07' />
             <div className='h-[90%] min-h-[100vh] lg:min-h-[88%] lg:h-[88%] w-full lg:flex overflow-scroll lg:overflow-hidden'>
                 <div className='h-[70%] w-full lg:h-full lg:w-[68%] lg:mr-4'>
                     <div className='h-[60%] lg:h-[69%] w-full lg:flex lg:mb-4'>

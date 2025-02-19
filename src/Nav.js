@@ -17,12 +17,12 @@ export default function Nav(props) {
                         <div className="w-full min-h-full bg-[#5d5c5a] flex flex-col gap-y-2 text-sm z-50 pt-16">
                             <button onClick={() => {
                                 setIsNavOpen(false);
-                                window.open('https://www.linkedin.com/in/tojo-tsimalay/', '_blank')
-                            }} className='hover:text-[#2E3042] transition delay-200 ease-in-out'>About</button>
+                                navigate(`${props.href_one}`)
+                            }} className='hover:text-[#2E3042] transition delay-200 ease-in-out'>{props.button_one}</button>
                             <button onClick={() => {
                                 setIsNavOpen(false);
-                                window.open('https://github.com/Tojo07', '_blank')
-                            }} className='hover:text-[#2E3042] transition delay-200 ease-in-out'>Projects</button>
+                                window.open(`${props.href_two}`, '_blank')
+                            }} className='hover:text-[#2E3042] transition delay-200 ease-in-out'>{props.button_two}</button>
                             <button onClick={() => {
                                 setIsNavOpen(false);
                                 window.open('https://medium.com/@tsimalayheriniainatojo', '_blank')
@@ -39,8 +39,8 @@ export default function Nav(props) {
                 :
                 <div className={`h-full w-[20%] flex justify-between px-4 transition-opacity duration-1000 delay-[${props.text_display_delay}] ${props.loaded ? "opacity-100" : "opacity-0"
                     } ease-in-out text-lg font-normal`}>
-                    <button onClick={() => navigate('about')} className='hover:text-[#2E3042] transition delay-200 ease-in-out'>About</button>
-                    <button onClick={() => window.open('https://github.com/Tojo07', '_blank')} className='hover:text-[#2E3042] transition delay-200 ease-in-out'>Projects</button>
+                    <button onClick={() => navigate(`${props.href_one}`)} className='hover:text-[#2E3042] transition delay-200 ease-in-out'>{props.button_one}</button>
+                    <button onClick={() => window.open(`${props.href_two}`, '_blank')} className='hover:text-[#2E3042] transition delay-200 ease-in-out'>{props.button_two}</button>
                     <button onClick={() => window.open('https://medium.com/@tsimalayheriniainatojo', '_blank')} className='hover:text-[#2E3042] transition delay-200 ease-in-out'>Blog</button>
                 </div>
             }
