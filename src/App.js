@@ -6,30 +6,28 @@ function App() {
   const [loaded, setLoaded] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [song, setSong] = useState(null);
+  const [songTitle, setSongTitle] = useState(null);
+  const [songArtist, setSongArtist] = useState(null);
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
   const text_display_delay = '2000ms';
 
-  useEffect(() => {
-    const today = new Date().toISOString().split("T")[0];
-    const storedDate = localStorage.getItem("dailySongDate");
-    const storedSong = localStorage.getItem("dailySong");
+  function shortenStr(input_text, max_length) {
+    if (input_text.length < max_length) return input_text;
+    return input_text.slice(0, max_length) + "...";
+  }
 
-    if (storedDate === today && storedSong) {
-      setSong(JSON.parse(storedSong));
-      setLoading(false);
-    } else {
-      fetch("https://getplaylist-r3tcy65wfq-uc.a.run.app")
-        .then(response => response.json())
-        .then(data => {
-          if (data.error) throw new Error(data.error);
-          setSong(data);
-          localStorage.setItem("dailySong", JSON.stringify(data));
-          localStorage.setItem("dailySongDate", today);
-        })
-        .catch(err => setError(err.message))
-        .finally(() => setLoading(false));
-    }
+  useEffect(() => {
+    fetch("https://getplaylist-r3tcy65wfq-uc.a.run.app")
+      .then(response => response.json())
+      .then(data => {
+        if (data.error) throw new Error(data.error);
+        setSong(data);
+        setSongArtist(shortenStr(data.artist, 20));
+        setSongTitle(shortenStr(data.name, 30));
+      })
+      .catch(err => setError(err.message))
+      .finally(() => setLoading(false));
   }, []);
 
 
@@ -140,8 +138,8 @@ function App() {
                     </svg>
                     <img src={song.cover} alt="Album Cover" className="lg:w-24 lg:h-24 w-16 h-16" />
                     <div>
-                      <h1 className="text-center font-extrabold lg:text-2xl text-xl">{song.artist}</h1>
-                      <h1 className="text-center font-semibold lg:text-lg text-md">{song.name}</h1>
+                      <h1 className="text-center font-extrabold lg:text-[120%] text-xl mb-4">{songArtist}</h1>
+                      <h1 className="text-center font-semibold lg:text-[96%] text-md">{songTitle}</h1>
                     </div>
                   </div>
                 )}
