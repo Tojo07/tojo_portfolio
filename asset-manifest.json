@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.82b3626a.css",
-    "main.js": "/static/js/main.73ae0b5d.js",
+    "main.js": "/static/js/main.474f10d8.js",
     "static/js/453.5b35bac5.chunk.js": "/static/js/453.5b35bac5.chunk.js",
     "static/media/IMG_5300.jpg": "/static/media/IMG_5300.44260831f083dd3d949c.jpg",
     "static/media/IMG_4259.JPG": "/static/media/IMG_4259.79f4dc72d71cbadad409.JPG",
@@ -9,11 +9,11 @@
     "static/media/resume_fall_2024_tojo_tsimalay.pdf": "/static/media/resume_fall_2024_tojo_tsimalay.918b53428d64b2577b1f.pdf",
     "index.html": "/index.html",
     "main.82b3626a.css.map": "/static/css/main.82b3626a.css.map",
-    "main.73ae0b5d.js.map": "/static/js/main.73ae0b5d.js.map",
+    "main.474f10d8.js.map": "/static/js/main.474f10d8.js.map",
     "453.5b35bac5.chunk.js.map": "/static/js/453.5b35bac5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82b3626a.css",
-    "static/js/main.73ae0b5d.js"
+    "static/js/main.474f10d8.js"
   ]
 }
