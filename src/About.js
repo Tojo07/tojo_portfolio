@@ -5,7 +5,7 @@ function About() {
     return (
 
         <section className='h-screen  lg:h-screen lg:w-screen bg-[#bab6aa] lg:px-12 lg:py-4 font-main text-[#151724]  lg:flex lg:flex-col'>
-            <Nav text_display_delay="0ms" h="6%" lg_h="10%" loaded={true} animate="" button_one='Home' href_one='/' button_two='Projects' href_two='https://github.com/Tojo07' />
+            <Nav text_display_delay="0ms" h="10%" lg_h="10%" loaded={true} animate="" button_one='Home' href_one='/' button_two='Projects' href_two='https://github.com/Tojo07' />
             <div className="h-[90%] min-h-[100vh] lg:min-h-[88%] lg:h-[88%] w-full lg:flex overflow-scroll lg:overflow-hidden">
                 <div className="h-full w-[64%]">
                     <h1 className="text-6xl text-center font-main font-extrabold pb-10">I am Tojo H. Tsimalay</h1>
